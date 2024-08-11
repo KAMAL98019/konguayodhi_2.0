@@ -1,0 +1,48 @@
+.linear-gradient{
+    background: linear-gradient(360deg, #000000 -80rem, rgba(0, 0, 0, 0.4) 97.78%);
+
+}
+
+
+.soc-title{
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: start;
+  }
+  
+  .image-container img {
+    width: 350px; 
+    height: 350px; 
+    object-fit: contain; 
+  }
+
+  .text-container {
+    text-align: center; 
+    max-width: 440px; 
+    margin: 0 auto; 
+  }
+  
+  .text-container p {
+    margin: 0rem 0; 
+    line-height: 1.6;
+  }
+  
+  .text-container h1 {
+    font-size: 1.5rem; 
+    font-weight: bold;
+  }
+  
+
+/* large screen */
+@media only screen and (min-width: 1366px) {
+    .title{
+        margin-top: 17rem;
+    }
+}
