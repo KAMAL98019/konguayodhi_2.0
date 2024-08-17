@@ -77,7 +77,8 @@ const Navbar: React.FC = () => {
         <nav className="flex justify-between font-sans p-3">
           <ul className="flex text-[18px]">
             <li>
-              <p className="font-bold">Logo</p>
+              {/* <p className="font-bold">Logo</p> */}
+              <img src="/logo.png" alt="" width={110} height={110} />
             </li>
           </ul>
 
@@ -108,7 +109,7 @@ const Navbar: React.FC = () => {
               <div className="h-[1px] p-[1px] w-[35px] mt-[-3px] bg-[#FFC178] mr-4"></div>
               <p className="text-[9px] tracking-[8px]">KONGU AYODHI</p>
             </div>
-            <h1 className="font-['Odibee-Sans'] font-extrabold text-7xl md:text-4xl mt-2">
+            <h1 className="font-obideesans font-extrabold text-7xl md:text-4xl mt-2">
               SriVatsa Charitable Trust
             </h1>
           </div>
@@ -147,12 +148,13 @@ const Navbar: React.FC = () => {
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`carousel__item ${index === statueCurrentIndex
-                  ? "carousel__item--main"
-                  : index === (statueCurrentIndex + 1) % images.length
+                className={`carousel__item ${
+                  index === statueCurrentIndex
+                    ? "carousel__item--main"
+                    : index === (statueCurrentIndex + 1) % images.length
                     ? "carousel__item--right"
                     : ""
-                  }`}
+                }`}
               >
                 <img src={image.src} alt={image.alt} />
                 <div className="carousel__text">
@@ -202,19 +204,50 @@ const Navbar: React.FC = () => {
           {imagesslide.map((image, index) => (
             <div
               key={index}
-              className={`mySlides fade ${index === slideCurrentIndex ? "active" : ""}`}
-              style={{ display: index === slideCurrentIndex ? "block" : "none" }}
+              className={`mySlides fade ${
+                index === slideCurrentIndex ? "active" : ""
+              }`}
+              style={{
+                display: index === slideCurrentIndex ? "block" : "none",
+              }}
             >
               <div className="numbertext">
                 {index + 1} / {imagesslide.length}
               </div>
               <div className="relative w-full h-full">
-                <img src={image.src} alt={image.alt} className="w-full h-auto object-cover" />
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-auto object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
                 <div className="text-container absolute inset-0 flex flex-col justify-center items-center">
-                  <p className="text-[#FBD784] text-lg mb-2">About Us</p>
-                  <h1 className="text-white text-4xl font-bold uppercase ">SriVatsa Charitable Trust
+                  <div className="flex">
+                    <div className="h-[1px] p-[1px] w-[35px] mt-3 bg-[#FFC178] mr-4"></div>
+                    <p className="text-[#FBD784] text-lg mb-2">About Us</p>
+                    <div className="h-[1px] p-[1px] w-[35px] mt-3 bg-[#FFC178] ml-4"></div>
+                  </div>
+
+                  <h1 className="text-white text-4xl font-bold uppercase ">
+                    SriVatsa Charitable Trust
                   </h1>
+                  <p className="text-center w-[50rem] text-[12px]">
+                    the trust has been dedicated to transforming lives by
+                    providing essential support in education, nutrition, and
+                    healthcare. Their mission is simple yet powerful: to ensure
+                    every child has the opportunity to lead a healthy, educated,
+                    and fulfilling life.Our Vision SRIVATSA Charitable Trust
+                    envisions a world where every child, regardless of
+                    background, can access the essentials for a fulfilling life.
+                    By focusing on education, nutrition, and healthcare, the
+                    trust aims to break the cycle of poverty and create a
+                    brighter future for underprivileged children.
+                  </p>
+                  <div className="mt-4 self-center">
+                    <p className="font-['Odibee-Sans'] text-[#FBD784] uppercase flex items-center cursor-pointer">
+                      Read More <FaArrowRightLong className="ml-2" />
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -226,8 +259,7 @@ const Navbar: React.FC = () => {
             &#10095;
           </button>
         </div>
-
-        <div id="btnDot">
+        {/* <div id="btnDot">
           {imagesslide.map((_, index) => (
             <span
               key={index}
@@ -235,7 +267,7 @@ const Navbar: React.FC = () => {
               onClick={() => setSlideCurrentIndex(index)}
             ></span>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
