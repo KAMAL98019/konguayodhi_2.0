@@ -12,6 +12,9 @@ module.exports = {
         sans: ['Open Sans', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
       },
+      screens:{
+        "max-small": {'max':'768px'}
+      }
     },
   },
   plugins: [],

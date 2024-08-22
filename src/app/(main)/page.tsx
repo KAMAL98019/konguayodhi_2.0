@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="md:p-9 xl:p-28  md:mt-[45%] xl:mt-[2%] ">
+    <div className=" max-small:mt-[28%] p-[14%] relative">
       <Content1 />
-      <Content2/>
+       <Content2/>
       <Content3/>
       <Content4/>
     </div>

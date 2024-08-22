@@ -1,261 +1,331 @@
-.linear-gradient{
-    background: linear-gradient(360deg, #000000 -80rem, rgba(0, 0, 0, 0.4) 97.78%);
-
+.nav-banner {
+  background-image: linear-gradient(
+  rgba(0, 0, 0, 0.2),
+  rgba(0, 0, 0, 0.9)
+),
+url("/banner.jpeg");
+  background-size: cover;
+  background-position: top;
+  height: 2400px; /* Set a height */
+  width: 100%; /* or a specific width */
+  padding:1%;
 }
-
 
 .soc-title{
 
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 
 }
 
-
-.image-container {
-    display: flex;
-    justify-content: start;
-  }
-  
-  .image-container img {
-    width: 350px; 
-    height: 350px; 
-    object-fit: contain; 
-  }
-
-  .text-container {
-    text-align: center; 
-    max-width: 440px; 
-    margin: 0 auto; 
-  }
-  
-  .text-container p {
-    margin: 0rem 0; 
-    line-height: 1.6;
-  }
-  
-  .text-container h1 {
-    font-size: 1.5rem; 
-    font-weight: bold;
-  }
-  .carousel {
-    position: relative;
+.carousel {
+  position: relative;
+  margin-top: 20%;
 }
 
 .carousel__item {
-    position: relative;
-    height: 33rem;
-    width: 23rem;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
-    position: absolute;
-    transform: translate(-50%,-50%) scale(.1);
-    z-index: 0;
-    transition: all .2s linear;
+  position: relative;
+  height: 33rem;
+  width: 23rem;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
+  position: absolute;
+  transform: translate(-50%,-50%) scale(.1);
+  z-index: 0;
+  transition: all .2s linear;
 }
 
 .carousel__item img {
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .carousel__item--main {
-    transform: translate(-50%,-50%) scale(1);
-    z-index: 2;
-    cursor: pointer;
+  transform: translate(-50%,-50%) scale(1);
+  z-index: 2;
+  cursor: pointer;
 }
 
 .carousel__item--left {
-    transform: translate(-110%,-50%) scale(.9);
-    z-index: 1;
+  transform: translate(-110%,-50%) scale(.9);
+  z-index: 1;
 }
 
 .carousel__item--right {
-    transform: translate(10%,-50%) scale(.9);
-    z-index: 1;
+  transform: translate(10%,-50%) scale(.9);
+  z-index: 1;
 }
 
 .carousel__item--left img,
 .carousel__item--right img {
-    filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .carousel__item--right:hover {
-    transform: translate(10%,-50%) scale(1.2);
-    z-index: 3;
-    cursor: pointer;
+  transform: translate(10%,-50%) scale(1.2);
+  z-index: 3;
+  cursor: pointer;
 }
 
 .carousel__item--left:hover {
-    transform: translate(-110%,-50%) scale(1.2);
-    z-index: 3;
-    cursor: pointer;
+  transform: translate(-110%,-50%) scale(1.2);
+  z-index: 3;
+  cursor: pointer;
 }
 
 .carousel__item--main:hover {
-    transform: translate(-50%,-50%) scale(1.2);
+  transform: translate(-50%,-50%) scale(1.2);
 }
 
 .carousel__text {
-    position: absolute;
-    bottom: 0;
-    z-index: 4;
-    opacity: 1; /* Make text always visible */
-    transition: opacity .2s;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Ensure the text background contrasts well */
-    padding: 2rem 1rem;
-    color: #fff;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+  opacity: 1; /* Make text always visible */
+  transition: opacity .2s;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Ensure the text background contrasts well */
+  padding: 2rem 1rem;
+  color: #fff;
 }
 
 .carousel__item:hover img {
-    filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .carousel__btns {
-    position: absolute;
-    transform: translate(-50%, 22rem);
-    display: flex;
-    gap: 2rem;
+  position: absolute;
+  transform: translate(-50%, 22rem);
+  display: flex;
+  gap: 2rem;
 }
 
 .carousel__btn {
-    background-color: transparent;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    border: 1px solid currentColor;
-    color: #fff;
-    cursor: pointer;
+  background-color: transparent;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  color: #fff;
+  cursor: pointer;
 }
 
 .carousel__btn svg {
-    height: 1.8rem;
-    width: 1.8rem;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .carousel__btn:hover {
-    color: #aaa;
+  color: #aaa;
 }
 
+/* General Slideshow Container */
 .slideshow-container {
-    /* max-width: 1000px; */
-    position: relative;
-    margin: auto;
-    margin-top: 42px;
-    height: 550px;
-    overflow: hidden;
-  }
-  .slideshow-container:not(.text,.numbertext) {
-    /* line-height: 170px; */
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  .mySlides img {
-    width:100%;
-  }
-  
-  /* Next & previous buttons */
-  #btnController {
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    /* margin-top: -20px; */
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .prev, .next {
-    cursor: pointer;
-    color: white; /* Ensure visibility on dark backgrounds */
-    font-weight: bold;
-    font-size: 24px; /* Larger font size for better visibility */
-    padding: 16px; /* Increased padding for a larger clickable area */
-    border: none; /* Remove default border */
-    border-radius: 2%; /* Circular buttons */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10; /* Ensure buttons are on top of other content */
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); /* Center vertically */
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    z-index:20;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  #btnDot {
-    text-align:center;
-  }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  
-  
-
-/* large screen */
-@media only screen and (min-width: 1366px) {
-    .title{
-        margin-top: 17rem;
-    }
+  position: relative;
+  bottom: 0px; /* Position at the bottom of the container */
+  left: 0;
+  top: 5%;
+  width: 100%;
+  height: 550px; /* Adjust the height as needed */
+  overflow: hidden;
+  z-index: 20;
 }
+
+/* My Slides */
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Next & Previous Buttons */
+#btnController {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev, .next {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 16px;
+  border: none;
+  border-radius: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Positioning of the Next Button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover Effects for Buttons */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption and Number Text */
+.text, .numbertext {
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  z-index: 20;
+}
+
+.text {
+  font-size: 15px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  font-size: 12px;
+  top: 0;
+}
+
+/* Dots Navigation */
+#btnDot {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading Animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: .4 }
+  to { opacity: 1 }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .slideshow-container {
+    height: auto;
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    margin-top: 40%;
+  }
+
+  .mySlides {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 100%;
+    scroll-snap-align: center;
+  }
+
+  #btnController {
+    display: none; /* Hide the controller on mobile */
+  }
+
+  .prev, .next {
+    font-size: 18px;
+    padding: 10px;
+    top: 45%;
+  }
+}
+
+
+
+@media only screen and (max-width:768px){
+
+  .carousel{
+    margin-top: 33%;
+    margin-left: -32%;
+  }
+  
+  .carousel__item{
+    width: 14rem;
+    height: 19rem;
+  }
+  .carousel__item img {
+    width: 100%;
+    height: 18rem;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+@media only screen and (min-width:768px){
+  .carousel{
+    /* margin-top: 33%; */
+    margin:27%  auto;
+  }
+}
+
+@media only screen and (min-width:1440px){
+  .carousel{
+    /* margin-top: 33%; */
+    margin:19%  auto;
+  }
+}
+
+@media only screen and (max-width:320px){
+  .carousel__item{
+    width: 12rem;
+    height: 12rem;
+  }
+  .banner-title{
+    font-size: 16px;
+  }
+}
+
+
+
+@media only screen and (max-width:678px){
+  .nav-banner{
+    height: 2100px;
+  }
+}
+
+@media only screen and (min-width:678px){
+  .nav-banner{
+    height: 2500px;
+  }
+}
+
+
+/* extra large 4k screen */
+
+
+
