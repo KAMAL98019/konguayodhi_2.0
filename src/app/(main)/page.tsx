@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className=" max-small:mt-[28%] p-[14%] relative">
+    <div className=" max-small:mt-[28%] p-[14%] relative max-small:p-[7%]">
       <Content1 />
        <Content2/>
       <Content3/>

@@ -238,7 +238,7 @@ url("/banner.jpeg");
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
   .slideshow-container {
-    height: auto;
+    height: 20rem;
     max-width: 100%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;

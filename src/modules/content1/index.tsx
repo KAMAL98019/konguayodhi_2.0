@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Content1: React.FC = () => {
   return (
-    <div className="flex max-small:block justify-between w-full h-auto p-4">
+    <div className="flex max-small:block max-small:mt-[12px] justify-between w-full h-auto p-4">
       <div className="max-small:visible md:hidden">
         <img src="/image1.jpeg" alt="" />
       </div>
@@ -12,10 +12,10 @@ const Content1: React.FC = () => {
         <div className="flex flex-row items-center space-x-4 p-2">
           <div className="flex items-center">
             <div className="h-[2px] w-[35px] bg-[#FFC178] mr-4"></div>
-            <p className="text-xs font-bold text-[#FBD784]">BUILDING PROJECT</p>
+            <p className="text-xs font-bold text-[#FBD784] font-[open-sans]">BUILDING PROJECT</p>
           </div>
         </div>
-        <h1 className="text-2xl max-small:w-[100%] max-small:text-[28px] max-small:text-center font-semibold mt-4">
+        <h1 className="text-2xl max-small:w-[100%] max-small:text-[28px] font-['odibee-sans'] max-small:text-center  font-semibold mt-4">
           Kongu Ayodhi Temple <br />
           Building
         </h1>
@@ -26,11 +26,11 @@ const Content1: React.FC = () => {
           worship; it will be a cornerstone of our community, fostering a deeper
           connection to our spiritual heritage and traditions.
         </p>
-        <div className="mt-4 self-center">
+        {/* <div className="mt-4 self-center">
           <p className="font-['Odibee-Sans'] text-[#FBD784] uppercase flex items-center cursor-pointer">
             Read More <FaArrowRightLong className="ml-2" />
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="max-small:hidden">
         <img src="/image1.jpeg" alt="" />

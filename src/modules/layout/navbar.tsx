@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
       <nav className="flex justify-between font-sans p-3 max-small:block">
         <ul className="flex max-small:justify-center text-[18px]">
           <li>
-            <img src="/logo.png" alt="Logo" width={110} height={110} />
+            <img src="/logo2.png" alt="Logo" width={40} height={40} />
           </li>
         </ul>
         <ul className="flex text-[16px] cursor-pointer max-small:block">
@@ -82,13 +82,16 @@ const Navbar: React.FC = () => {
           </li>
         </ul>
       </nav>
+      <div className="flex justify-center items-center mt-5">  
+        <img src="/sanguchakram.png" alt=""  width={350} height={350} className=""/>
 
+      </div>
       {/* Banner Title */}
       <div className="flex justify-center items-center">
-        <div className="block mt-[4rem] md:mt-[8rem] title font-['open-sans'] text-center">
-          <div className="text-[#FFC178] flex items-center justify-center space-x-2">
+        <div className="block mt-10 title font-['open-sans'] text-center">
+          <div className="text-[#FFC178] flex items-center justify-start space-x-2">
             <div className="h-[1px] p-[1px] w-[35px] mt-[-3px] bg-[#FFC178]"></div>
-            <p className="text-[9px] tracking-[8px]">KONGU AYODHI</p>
+            <p className="text-[14px] tracking-[8px]">KONGU AYODHI</p>
           </div>
           <h1 className="banner-title font-obideesans font-extrabold text-[49px] mt-2 max-small:text-[20px]">
             SriVatsa Charitable Trust
@@ -111,12 +114,12 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Scroll Down Button */}
-      <div className="font-['Odibee-Sans'] max-small:mt-[-30px] cursor-pointer flex justify-center items-center">
+      {/* <div className="font-['Odibee-Sans'] max-small:mt-[-30px] cursor-pointer flex justify-center items-center">
         <button className="flex items-center p-[12px] justify-center rounded hover:bg-black font-semibold border-[1px]">
           SCROLL DOWN
           <LuMoveDown className="ml-2" />
         </button>
-      </div>
+      </div> */}
 
       {/* Our Kongu Ayodhi Statues */}
       <h1 className="font-['Odibee-Sans'] text-center font-extrabold text-xl mt-12 max-small:text-[18px]">
@@ -142,9 +145,9 @@ const Navbar: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="flex max-small:block mt-[16%] max-small:mt-[25%] justify-end ml-36 max-small:ml-0 max-small:bg-transparent items-center ">
+      <div className="flex max-small:block mt-[16%] max-small:mt-[65%] justify-end ml-36 max-small:ml-0 max-small:bg-transparent items-center ">
         <div className=" max-small:bg-transparent  max-small:mt-3 shadow-lg h-auto flex items-center justify-center">
-          <img src="/nutana.png" alt="" className="w-full max-small:w-auto" />
+          <img src="/kodhandaramar.png" alt="" className="w-full max-small:w-auto max-small:h-[12rem]"  />
         </div>
         <div className="h-auto w-full ">
           <div className="flex flex-col md:flex-row mt-3 h-auto">
@@ -169,11 +172,11 @@ const Navbar: React.FC = () => {
                 every child, regardless of background, can access the
                 essentials for a fulfilling life.
               </p>
-              <div className="mt-2 pl-4 self-start max-small:self-center">
+              {/* <div className="mt-2 pl-4 self-start max-small:self-center">
                 <p className="font-['Odibee-Sans']  text-[#FBD784] uppercase flex items-center cursor-pointer">
                   Read More <FaArrowRightLong className="ml-2" />
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -221,11 +224,11 @@ const Navbar: React.FC = () => {
                   trust aims to break the cycle of poverty and create a
                   brighter future for underprivileged children.
                 </p>
-                <div className="mt-4">
+                {/* <div className="mt-4">
                   <p className="font-['Odibee-Sans'] text-[#FBD784] uppercase flex items-center cursor-pointer">
                     Read More <FaArrowRightLong className="ml-2" />
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
